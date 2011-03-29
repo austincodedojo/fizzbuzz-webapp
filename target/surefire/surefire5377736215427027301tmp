@@ -1,0 +1,5 @@
+#surefire
+#Mon Mar 28 21:47:22 CDT 2011
+user.dir=/home/ziroby/workspace/fizzbuzz
+localRepository=/home/ziroby/.m2/repository
+basedir=/home/ziroby/workspace/fizzbuzz
