@@ -21,13 +21,6 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.2</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-server</artifactId>
             <version>1.5-ea09</version>
@@ -36,6 +29,14 @@
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
             <version>1.5-ea09</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <type>jar</type>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
@@ -79,7 +80,6 @@
                     <stopPort>9966</stopPort>
                     <stopKey>stop</stopKey>
                     <daemon>true</daemon>
-<!--                     <webApp>../${austincodedojo.serverModule}/target/${austincodedojo.serverModule}.war</webApp> -->
                 </configuration>
             </plugin>
             <plugin>
@@ -107,7 +107,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 </project>
