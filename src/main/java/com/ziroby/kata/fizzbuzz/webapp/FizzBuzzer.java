@@ -1,5 +1,6 @@
 package com.ziroby.kata.fizzbuzz.webapp;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 @Path("/fizzbuzz")
