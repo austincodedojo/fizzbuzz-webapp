@@ -1,6 +1,7 @@
 package com.ziroby.kata.fizzbuzz.webapp;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.*;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
@@ -17,5 +18,14 @@ public class FizzBuzzAcceptance {
 		
 		String result = resource.get(String.class);
 		assertThat(result, is("one"));
+	}
+	
+	@Test
+	public void two_should_be_two() throws Exception {
+		Client client = Client.create();
+		WebResource resource = client.resource("http://localhost:8081/fizzbuzz/2");
+		
+		String result = resource.get(String.class);
+		assertThat(result, is("two"));
 	}
 }
