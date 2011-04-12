@@ -61,6 +61,9 @@
                         <goals>
                             <goal>deploy-war</goal>
                         </goals>
+                        <configuration>
+                            <daemon>true</daemon>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>stop-server</id>
@@ -71,15 +74,15 @@
                     </execution>
                 </executions>
                 <configuration>
-                 <systemProperties>
-                    <systemProperty>
-                        <name>jetty.port</name>
-                        <value>8081</value>
-                    </systemProperty>
-                 </systemProperties>
+                    <systemProperties>
+                        <systemProperty>
+                            <name>jetty.port</name>
+                            <value>8081</value>
+                        </systemProperty>
+                    </systemProperties>
                     <stopPort>9966</stopPort>
                     <stopKey>stop</stopKey>
-                    <daemon>true</daemon>
+                    <scanIntervalSeconds>1</scanIntervalSeconds>
                 </configuration>
             </plugin>
             <plugin>

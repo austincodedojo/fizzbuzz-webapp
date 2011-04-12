@@ -5,7 +5,7 @@
 <web-app>
   <display-name>Austin Code Dojo Fizzbuzz Web</display-name>
   <servlet>
-    <servlet-name>FizzBuzzer</servlet-name>
+    <servlet-name>FizzBuzzServer</servlet-name>
     <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
     <init-param>
         <param-name>com.sun.jersey.config.property.packages</param-name>
@@ -13,7 +13,7 @@
     </init-param>
   </servlet>
   <servlet-mapping>
-    <servlet-name>FizzBuzzer</servlet-name>
+    <servlet-name>FizzBuzzServer</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
